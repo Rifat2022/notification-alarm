@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./js/script.js">
+    <link rel="icon" href="./images/noun-notification-6598275.png" type="image/x-icon">
+    <title>Notification</title>
+</head>
+
+<body>
+    <section class="container relative bg-slate-400 min-w-full min-h-screen flex flex-col items-center justify-center">
+        <div class="shadow-md mb-12 rounded-lg bg-white">
+            <h1 class="text-2xl font-bold text-blue-900 p-5">Get Notification Alarm
+                <i class='bx bx-alarm'></i>
+            </h1>
+        </div> 
+        
+        <div id="setting" class="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-lg p-8">
+            <div class="mb-3 font-bold text-xl text-uppercase text-blue-500">
+                Notification Time
+            </div>
+            <input id="input-el" type="text" class="border border-gray-300 p-2 rounded-md w-full mb-4"
+                placeholder="Inerval in Min">
+            <button id="btn-set"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md">Set</button>
+            <button id="btn-start" class="hidden  items-center shadow-lg bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md">
+                <span id="strt-text">Start</span>
+                <div id="spinner" class="hidden ml-2 w-5 h-5">
+                    <img src="./images/stopwatch-7503_256.gif" alt="loading">
+                </div>
+            </button>                
+        </div>
+
+        <div id="closing-div" class="hidden absolute inset-0  items-center justify-center">
+            <div
+                class="relative w-2/6 h-2/6 bg-gray-700 rounded-xl shadow-xl flex flex-col items-center justify-center">
+                <div id="btn-close"><i class='bx bx-message-square-x absolute top-0 right-0 m-4 text-white text-4xl cursor-pointer hover:text-cyan-100' ></i></div>
+                <div class="p-10 text-white font-bold text-4xl">Take Rest!</div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Script file  -->
+    <script type="text/javascript" src="./js/script.js" defer></script>
+
+</body>
+
+</html>
